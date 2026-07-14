@@ -1,0 +1,2589 @@
+This file is a merged representation of the entire codebase, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of the entire repository's contents.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+public/
+  favicon.svg
+  icons.svg
+  logo.png
+src/
+  assets/
+    hero.png
+    react.svg
+    vite.svg
+  components/
+    AuthorPage.jsx
+    AuthPage.jsx
+    EditorDashboard.jsx
+    LandingPage.jsx
+    ManuscriptPage.jsx
+    ResetPasswordPage.jsx
+    StudentDashboard.jsx
+    SubmissionGuidelines.jsx
+  lib/
+    supabaseClient.js
+  App.css
+  App.jsx
+  index.css
+  main.jsx
+.gitignore
+.oxlintrc.json
+index.html
+package.json
+postcss.config.js
+README.md
+tailwind.config.js
+vite.config.js
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="public/favicon.svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="46" fill="none" viewBox="0 0 48 46"><path fill="#863bff" d="M25.946 44.938c-.664.845-2.021.375-2.021-.698V33.937a2.26 2.26 0 0 0-2.262-2.262H10.287c-.92 0-1.456-1.04-.92-1.788l7.48-10.471c1.07-1.497 0-3.578-1.842-3.578H1.237c-.92 0-1.456-1.04-.92-1.788L10.013.474c.214-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.471c-1.07 1.498 0 3.579 1.842 3.579h11.377c.943 0 1.473 1.088.89 1.83L25.947 44.94z" style="fill:#863bff;fill:color(display-p3 .5252 .23 1);fill-opacity:1"/><mask id="a" width="48" height="46" x="0" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#000" d="M25.842 44.938c-.664.844-2.021.375-2.021-.698V33.937a2.26 2.26 0 0 0-2.262-2.262H10.183c-.92 0-1.456-1.04-.92-1.788l7.48-10.471c1.07-1.498 0-3.579-1.842-3.579H1.133c-.92 0-1.456-1.04-.92-1.787L9.91.473c.214-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.471c-1.07 1.498 0 3.578 1.842 3.578h11.377c.943 0 1.473 1.088.89 1.832L25.843 44.94z" style="fill:#000;fill-opacity:1"/></mask><g mask="url(#a)"><g filter="url(#b)"><ellipse cx="5.508" cy="14.704" fill="#ede6ff" rx="5.508" ry="14.704" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -4.47 31.516)"/></g><g filter="url(#c)"><ellipse cx="10.399" cy="29.851" fill="#ede6ff" rx="10.399" ry="29.851" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -39.328 7.883)"/></g><g filter="url(#d)"><ellipse cx="5.508" cy="30.487" fill="#7e14ff" rx="5.508" ry="30.487" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.814 -25.913 -14.639)scale(1 -1)"/></g><g filter="url(#e)"><ellipse cx="5.508" cy="30.599" fill="#7e14ff" rx="5.508" ry="30.599" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.814 -32.644 -3.334)scale(1 -1)"/></g><g filter="url(#f)"><ellipse cx="5.508" cy="30.599" fill="#7e14ff" rx="5.508" ry="30.599" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="matrix(.00324 1 1 -.00324 -34.34 30.47)"/></g><g filter="url(#g)"><ellipse cx="14.072" cy="22.078" fill="#ede6ff" rx="14.072" ry="22.078" style="fill:#ede6ff;fill:color(display-p3 .9275 .9033 1);fill-opacity:1" transform="rotate(93.35 24.506 48.493)scale(-1 1)"/></g><g filter="url(#h)"><ellipse cx="3.47" cy="21.501" fill="#7e14ff" rx="3.47" ry="21.501" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.009 28.708 47.59)scale(-1 1)"/></g><g filter="url(#i)"><ellipse cx="3.47" cy="21.501" fill="#7e14ff" rx="3.47" ry="21.501" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(89.009 28.708 47.59)scale(-1 1)"/></g><g filter="url(#j)"><ellipse cx=".387" cy="8.972" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(39.51 .387 8.972)"/></g><g filter="url(#k)"><ellipse cx="47.523" cy="-6.092" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 47.523 -6.092)"/></g><g filter="url(#l)"><ellipse cx="41.412" cy="6.333" fill="#47bfff" rx="5.971" ry="9.665" style="fill:#47bfff;fill:color(display-p3 .2799 .748 1);fill-opacity:1" transform="rotate(37.892 41.412 6.333)"/></g><g filter="url(#m)"><ellipse cx="-1.879" cy="38.332" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 -1.88 38.332)"/></g><g filter="url(#n)"><ellipse cx="-1.879" cy="38.332" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 -1.88 38.332)"/></g><g filter="url(#o)"><ellipse cx="35.651" cy="29.907" fill="#7e14ff" rx="4.407" ry="29.108" style="fill:#7e14ff;fill:color(display-p3 .4922 .0767 1);fill-opacity:1" transform="rotate(37.892 35.651 29.907)"/></g><g filter="url(#p)"><ellipse cx="38.418" cy="32.4" fill="#47bfff" rx="5.971" ry="15.297" style="fill:#47bfff;fill:color(display-p3 .2799 .748 1);fill-opacity:1" transform="rotate(37.892 38.418 32.4)"/></g></g><defs><filter id="b" width="60.045" height="41.654" x="-19.77" y="16.149" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="c" width="90.34" height="51.437" x="-54.613" y="-7.533" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="d" width="79.355" height="29.4" x="-49.64" y="2.03" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="e" width="79.579" height="29.4" x="-45.045" y="20.029" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="f" width="79.579" height="29.4" x="-43.513" y="21.178" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="g" width="74.749" height="58.852" x="15.756" y="-17.901" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="7.659"/></filter><filter id="h" width="61.377" height="25.362" x="23.548" y="2.284" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="i" width="61.377" height="25.362" x="23.548" y="2.284" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="j" width="56.045" height="63.649" x="-27.636" y="-22.853" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="k" width="54.814" height="64.646" x="20.116" y="-38.415" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="l" width="33.541" height="35.313" x="24.641" y="-11.323" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="m" width="54.814" height="64.646" x="-29.286" y="6.009" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="n" width="54.814" height="64.646" x="-29.286" y="6.009" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="o" width="54.814" height="64.646" x="8.244" y="-2.416" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter><filter id="p" width="39.409" height="43.623" x="18.713" y="10.588" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17158" stdDeviation="4.596"/></filter></defs></svg>
+</file>
+
+<file path="public/icons.svg">
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="bluesky-icon" viewBox="0 0 16 17">
+    <g clip-path="url(#bluesky-clip)"><path fill="#08060d" d="M7.75 7.735c-.693-1.348-2.58-3.86-4.334-5.097-1.68-1.187-2.32-.981-2.74-.79C.188 2.065.1 2.812.1 3.251s.241 3.602.398 4.13c.52 1.744 2.367 2.333 4.07 2.145-2.495.37-4.71 1.278-1.805 4.512 3.196 3.309 4.38-.71 4.987-2.746.608 2.036 1.307 5.91 4.93 2.746 2.72-2.746.747-4.143-1.747-4.512 1.702.189 3.55-.4 4.07-2.145.156-.528.397-3.691.397-4.13s-.088-1.186-.575-1.406c-.42-.19-1.06-.395-2.741.79-1.755 1.24-3.64 3.752-4.334 5.099"/></g>
+    <defs><clipPath id="bluesky-clip"><path fill="#fff" d="M.1.85h15.3v15.3H.1z"/></clipPath></defs>
+  </symbol>
+  <symbol id="discord-icon" viewBox="0 0 20 19">
+    <path fill="#08060d" d="M16.224 3.768a14.5 14.5 0 0 0-3.67-1.153c-.158.286-.343.67-.47.976a13.5 13.5 0 0 0-4.067 0c-.128-.306-.317-.69-.476-.976A14.4 14.4 0 0 0 3.868 3.77C1.546 7.28.916 10.703 1.231 14.077a14.7 14.7 0 0 0 4.5 2.306q.545-.748.965-1.587a9.5 9.5 0 0 1-1.518-.74q.191-.14.372-.293c2.927 1.369 6.107 1.369 8.999 0q.183.152.372.294-.723.437-1.52.74.418.838.963 1.588a14.6 14.6 0 0 0 4.504-2.308c.37-3.911-.63-7.302-2.644-10.309m-9.13 8.234c-.878 0-1.599-.82-1.599-1.82 0-.998.705-1.82 1.6-1.82.894 0 1.614.82 1.599 1.82.001 1-.705 1.82-1.6 1.82m5.91 0c-.878 0-1.599-.82-1.599-1.82 0-.998.705-1.82 1.6-1.82.893 0 1.614.82 1.599 1.82 0 1-.706 1.82-1.6 1.82"/>
+  </symbol>
+  <symbol id="documentation-icon" viewBox="0 0 21 20">
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="m15.5 13.333 1.533 1.322c.645.555.967.833.967 1.178s-.322.623-.967 1.179L15.5 18.333m-3.333-5-1.534 1.322c-.644.555-.966.833-.966 1.178s.322.623.966 1.179l1.534 1.321"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M17.167 10.836v-4.32c0-1.41 0-2.117-.224-2.68-.359-.906-1.118-1.621-2.08-1.96-.599-.21-1.349-.21-2.848-.21-2.623 0-3.935 0-4.983.369-1.684.591-3.013 1.842-3.641 3.428C3 6.449 3 7.684 3 10.154v2.122c0 2.558 0 3.838.706 4.726q.306.383.713.671c.76.536 1.79.64 3.581.66"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M3 10a2.78 2.78 0 0 1 2.778-2.778c.555 0 1.209.097 1.748-.047.48-.129.854-.503.982-.982.145-.54.048-1.194.048-1.749a2.78 2.78 0 0 1 2.777-2.777"/>
+  </symbol>
+  <symbol id="github-icon" viewBox="0 0 19 19">
+    <path fill="#08060d" fill-rule="evenodd" d="M9.356 1.85C5.05 1.85 1.57 5.356 1.57 9.694a7.84 7.84 0 0 0 5.324 7.44c.387.079.528-.168.528-.376 0-.182-.013-.805-.013-1.454-2.165.467-2.616-.935-2.616-.935-.349-.91-.864-1.143-.864-1.143-.71-.48.051-.48.051-.48.787.051 1.2.805 1.2.805.695 1.194 1.817.857 2.268.649.064-.507.27-.857.49-1.052-1.728-.182-3.545-.857-3.545-3.87 0-.857.31-1.558.8-2.104-.078-.195-.349-1 .077-2.078 0 0 .657-.208 2.14.805a7.5 7.5 0 0 1 1.946-.26c.657 0 1.328.092 1.946.26 1.483-1.013 2.14-.805 2.14-.805.426 1.078.155 1.883.078 2.078.502.546.799 1.247.799 2.104 0 3.013-1.818 3.675-3.558 3.87.284.247.528.714.528 1.454 0 1.052-.012 1.896-.012 2.156 0 .208.142.455.528.377a7.84 7.84 0 0 0 5.324-7.441c.013-4.338-3.48-7.844-7.773-7.844" clip-rule="evenodd"/>
+  </symbol>
+  <symbol id="social-icon" viewBox="0 0 20 20">
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M12.5 6.667a4.167 4.167 0 1 0-8.334 0 4.167 4.167 0 0 0 8.334 0"/>
+    <path fill="none" stroke="#aa3bff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.35" d="M2.5 16.667a5.833 5.833 0 0 1 8.75-5.053m3.837.474.513 1.035c.07.144.257.282.414.309l.93.155c.596.1.736.536.307.965l-.723.73a.64.64 0 0 0-.152.531l.207.903c.164.715-.213.991-.84.618l-.872-.52a.63.63 0 0 0-.577 0l-.872.52c-.624.373-1.003.094-.84-.618l.207-.903a.64.64 0 0 0-.152-.532l-.723-.729c-.426-.43-.289-.864.306-.964l.93-.156a.64.64 0 0 0 .412-.31l.513-1.034c.28-.562.735-.562 1.012 0"/>
+  </symbol>
+  <symbol id="x-icon" viewBox="0 0 19 19">
+    <path fill="#08060d" fill-rule="evenodd" d="M1.893 1.98c.052.072 1.245 1.769 2.653 3.77l2.892 4.114c.183.261.333.48.333.486s-.068.089-.152.183l-.522.593-.765.867-3.597 4.087c-.375.426-.734.834-.798.905a1 1 0 0 0-.118.148c0 .01.236.017.664.017h.663l.729-.83c.4-.457.796-.906.879-.999a692 692 0 0 0 1.794-2.038c.034-.037.301-.34.594-.675l.551-.624.345-.392a7 7 0 0 1 .34-.374c.006 0 .93 1.306 2.052 2.903l2.084 2.965.045.063h2.275c1.87 0 2.273-.003 2.266-.021-.008-.02-1.098-1.572-3.894-5.547-2.013-2.862-2.28-3.246-2.273-3.266.008-.019.282-.332 2.085-2.38l2-2.274 1.567-1.782c.022-.028-.016-.03-.65-.03h-.674l-.3.342a871 871 0 0 1-1.782 2.025c-.067.075-.405.458-.75.852a100 100 0 0 1-.803.91c-.148.172-.299.344-.99 1.127-.304.343-.32.358-.345.327-.015-.019-.904-1.282-1.976-2.808L6.365 1.85H1.8zm1.782.91 8.078 11.294c.772 1.08 1.413 1.973 1.425 1.984.016.017.241.02 1.05.017l1.03-.004-2.694-3.766L7.796 5.75 5.722 2.852l-1.039-.004-1.039-.004z" clip-rule="evenodd"/>
+  </symbol>
+</svg>
+</file>
+
+<file path="src/assets/react.svg">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="35.93" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 228"><path fill="#00D8FF" d="M210.483 73.824a171.49 171.49 0 0 0-8.24-2.597c.465-1.9.893-3.777 1.273-5.621c6.238-30.281 2.16-54.676-11.769-62.708c-13.355-7.7-35.196.329-57.254 19.526a171.23 171.23 0 0 0-6.375 5.848a155.866 155.866 0 0 0-4.241-3.917C100.759 3.829 77.587-4.822 63.673 3.233C50.33 10.957 46.379 33.89 51.995 62.588a170.974 170.974 0 0 0 1.892 8.48c-3.28.932-6.445 1.924-9.474 2.98C17.309 83.498 0 98.307 0 113.668c0 15.865 18.582 31.778 46.812 41.427a145.52 145.52 0 0 0 6.921 2.165a167.467 167.467 0 0 0-2.01 9.138c-5.354 28.2-1.173 50.591 12.134 58.266c13.744 7.926 36.812-.22 59.273-19.855a145.567 145.567 0 0 0 5.342-4.923a168.064 168.064 0 0 0 6.92 6.314c21.758 18.722 43.246 26.282 56.54 18.586c13.731-7.949 18.194-32.003 12.4-61.268a145.016 145.016 0 0 0-1.535-6.842c1.62-.48 3.21-.974 4.76-1.488c29.348-9.723 48.443-25.443 48.443-41.52c0-15.417-17.868-30.326-45.517-39.844Zm-6.365 70.984c-1.4.463-2.836.91-4.3 1.345c-3.24-10.257-7.612-21.163-12.963-32.432c5.106-11 9.31-21.767 12.459-31.957c2.619.758 5.16 1.557 7.61 2.4c23.69 8.156 38.14 20.213 38.14 29.504c0 9.896-15.606 22.743-40.946 31.14Zm-10.514 20.834c2.562 12.94 2.927 24.64 1.23 33.787c-1.524 8.219-4.59 13.698-8.382 15.893c-8.067 4.67-25.32-1.4-43.927-17.412a156.726 156.726 0 0 1-6.437-5.87c7.214-7.889 14.423-17.06 21.459-27.246c12.376-1.098 24.068-2.894 34.671-5.345a134.17 134.17 0 0 1 1.386 6.193ZM87.276 214.515c-7.882 2.783-14.16 2.863-17.955.675c-8.075-4.657-11.432-22.636-6.853-46.752a156.923 156.923 0 0 1 1.869-8.499c10.486 2.32 22.093 3.988 34.498 4.994c7.084 9.967 14.501 19.128 21.976 27.15a134.668 134.668 0 0 1-4.877 4.492c-9.933 8.682-19.886 14.842-28.658 17.94ZM50.35 144.747c-12.483-4.267-22.792-9.812-29.858-15.863c-6.35-5.437-9.555-10.836-9.555-15.216c0-9.322 13.897-21.212 37.076-29.293c2.813-.98 5.757-1.905 8.812-2.773c3.204 10.42 7.406 21.315 12.477 32.332c-5.137 11.18-9.399 22.249-12.634 32.792a134.718 134.718 0 0 1-6.318-1.979Zm12.378-84.26c-4.811-24.587-1.616-43.134 6.425-47.789c8.564-4.958 27.502 2.111 47.463 19.835a144.318 144.318 0 0 1 3.841 3.545c-7.438 7.987-14.787 17.08-21.808 26.988c-12.04 1.116-23.565 2.908-34.161 5.309a160.342 160.342 0 0 1-1.76-7.887Zm110.427 27.268a347.8 347.8 0 0 0-7.785-12.803c8.168 1.033 15.994 2.404 23.343 4.08c-2.206 7.072-4.956 14.465-8.193 22.045a381.151 381.151 0 0 0-7.365-13.322Zm-45.032-43.861c5.044 5.465 10.096 11.566 15.065 18.186a322.04 322.04 0 0 0-30.257-.006c4.974-6.559 10.069-12.652 15.192-18.18ZM82.802 87.83a323.167 323.167 0 0 0-7.227 13.238c-3.184-7.553-5.909-14.98-8.134-22.152c7.304-1.634 15.093-2.97 23.209-3.984a321.524 321.524 0 0 0-7.848 12.897Zm8.081 65.352c-8.385-.936-16.291-2.203-23.593-3.793c2.26-7.3 5.045-14.885 8.298-22.6a321.187 321.187 0 0 0 7.257 13.246c2.594 4.48 5.28 8.868 8.038 13.147Zm37.542 31.03c-5.184-5.592-10.354-11.779-15.403-18.433c4.902.192 9.899.29 14.978.29c5.218 0 10.376-.117 15.453-.343c-4.985 6.774-10.018 12.97-15.028 18.486Zm52.198-57.817c3.422 7.8 6.306 15.345 8.596 22.52c-7.422 1.694-15.436 3.058-23.88 4.071a382.417 382.417 0 0 0 7.859-13.026a347.403 347.403 0 0 0 7.425-13.565Zm-16.898 8.101a358.557 358.557 0 0 1-12.281 19.815a329.4 329.4 0 0 1-23.444.823c-7.967 0-15.716-.248-23.178-.732a310.202 310.202 0 0 1-12.513-19.846h.001a307.41 307.41 0 0 1-10.923-20.627a310.278 310.278 0 0 1 10.89-20.637l-.001.001a307.318 307.318 0 0 1 12.413-19.761c7.613-.576 15.42-.876 23.31-.876H128c7.926 0 15.743.303 23.354.883a329.357 329.357 0 0 1 12.335 19.695a358.489 358.489 0 0 1 11.036 20.54a329.472 329.472 0 0 1-11 20.722Zm22.56-122.124c8.572 4.944 11.906 24.881 6.52 51.026c-.344 1.668-.73 3.367-1.15 5.09c-10.622-2.452-22.155-4.275-34.23-5.408c-7.034-10.017-14.323-19.124-21.64-27.008a160.789 160.789 0 0 1 5.888-5.4c18.9-16.447 36.564-22.941 44.612-18.3ZM128 90.808c12.625 0 22.86 10.235 22.86 22.86s-10.235 22.86-22.86 22.86s-22.86-10.235-22.86-22.86s10.235-22.86 22.86-22.86Z"></path></svg>
+</file>
+
+<file path="src/assets/vite.svg">
+<svg xmlns="http://www.w3.org/2000/svg" width="77" height="47" fill="none" aria-labelledby="vite-logo-title" viewBox="0 0 77 47"><title id="vite-logo-title">Vite</title><style>.parenthesis{fill:#000}@media (prefers-color-scheme:dark){.parenthesis{fill:#fff}}</style><path fill="#9135ff" d="M40.151 45.71c-.663.844-2.02.374-2.02-.699V34.708a2.26 2.26 0 0 0-2.262-2.262H24.493c-.92 0-1.457-1.04-.92-1.788l7.479-10.471c1.07-1.498 0-3.578-1.842-3.578H15.443c-.92 0-1.456-1.04-.92-1.788l9.696-13.576c.213-.297.556-.474.92-.474h28.894c.92 0 1.456 1.04.92 1.788l-7.48 10.472c-1.07 1.497 0 3.578 1.842 3.578h11.376c.944 0 1.474 1.087.89 1.83L40.153 45.712z"/><mask id="a" width="48" height="47" x="14" y="0" maskUnits="userSpaceOnUse" style="mask-type:alpha"><path fill="#000" d="M40.047 45.71c-.663.843-2.02.374-2.02-.699V34.708a2.26 2.26 0 0 0-2.262-2.262H24.389c-.92 0-1.457-1.04-.92-1.788l7.479-10.472c1.07-1.497 0-3.578-1.842-3.578H15.34c-.92 0-1.456-1.04-.92-1.788l9.696-13.575c.213-.297.556-.474.92-.474H53.93c.92 0 1.456 1.04.92 1.788L47.37 13.03c-1.07 1.498 0 3.578 1.842 3.578h11.376c.944 0 1.474 1.088.89 1.831L40.049 45.712z"/></mask><g mask="url(#a)"><g filter="url(#b)"><ellipse cx="5.508" cy="14.704" fill="#eee6ff" rx="5.508" ry="14.704" transform="rotate(269.814 20.96 11.29)scale(-1 1)"/></g><g filter="url(#c)"><ellipse cx="10.399" cy="29.851" fill="#eee6ff" rx="10.399" ry="29.851" transform="rotate(89.814 -16.902 -8.275)scale(1 -1)"/></g><g filter="url(#d)"><ellipse cx="5.508" cy="30.487" fill="#8900ff" rx="5.508" ry="30.487" transform="rotate(89.814 -19.197 -7.127)scale(1 -1)"/></g><g filter="url(#e)"><ellipse cx="5.508" cy="30.599" fill="#8900ff" rx="5.508" ry="30.599" transform="rotate(89.814 -25.928 4.177)scale(1 -1)"/></g><g filter="url(#f)"><ellipse cx="5.508" cy="30.599" fill="#8900ff" rx="5.508" ry="30.599" transform="rotate(89.814 -25.738 5.52)scale(1 -1)"/></g><g filter="url(#g)"><ellipse cx="14.072" cy="22.078" fill="#eee6ff" rx="14.072" ry="22.078" transform="rotate(93.35 31.245 55.578)scale(-1 1)"/></g><g filter="url(#h)"><ellipse cx="3.47" cy="21.501" fill="#8900ff" rx="3.47" ry="21.501" transform="rotate(89.009 35.419 55.202)scale(-1 1)"/></g><g filter="url(#i)"><ellipse cx="3.47" cy="21.501" fill="#8900ff" rx="3.47" ry="21.501" transform="rotate(89.009 35.419 55.202)scale(-1 1)"/></g><g filter="url(#j)"><ellipse cx="14.592" cy="9.743" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(39.51 14.592 9.743)"/></g><g filter="url(#k)"><ellipse cx="61.728" cy="-5.321" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(37.892 61.728 -5.32)"/></g><g filter="url(#l)"><ellipse cx="55.618" cy="7.104" fill="#00c2ff" rx="5.971" ry="9.665" transform="rotate(37.892 55.618 7.104)"/></g><g filter="url(#m)"><ellipse cx="12.326" cy="39.103" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(37.892 12.326 39.103)"/></g><g filter="url(#n)"><ellipse cx="12.326" cy="39.103" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(37.892 12.326 39.103)"/></g><g filter="url(#o)"><ellipse cx="49.857" cy="30.678" fill="#8900ff" rx="4.407" ry="29.108" transform="rotate(37.892 49.857 30.678)"/></g><g filter="url(#p)"><ellipse cx="52.623" cy="33.171" fill="#00c2ff" rx="5.971" ry="15.297" transform="rotate(37.892 52.623 33.17)"/></g></g><path d="M6.919 0c-9.198 13.166-9.252 33.575 0 46.789h6.215c-9.25-13.214-9.196-33.623 0-46.789zm62.424 0h-6.215c9.198 13.166 9.252 33.575 0 46.789h6.215c9.25-13.214 9.196-33.623 0-46.789" class="parenthesis"/><defs><filter id="b" width="60.045" height="41.654" x="-5.564" y="16.92" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="7.659"/></filter><filter id="c" width="90.34" height="51.437" x="-40.407" y="-6.762" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="7.659"/></filter><filter id="d" width="79.355" height="29.4" x="-35.435" y="2.801" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="e" width="79.579" height="29.4" x="-30.84" y="20.8" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="f" width="79.579" height="29.4" x="-29.307" y="21.949" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="g" width="74.749" height="58.852" x="29.961" y="-17.13" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="7.659"/></filter><filter id="h" width="61.377" height="25.362" x="37.754" y="3.055" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="i" width="61.377" height="25.362" x="37.754" y="3.055" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="j" width="56.045" height="63.649" x="-13.43" y="-22.082" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="k" width="54.814" height="64.646" x="34.321" y="-37.644" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="l" width="33.541" height="35.313" x="38.847" y="-10.552" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="m" width="54.814" height="64.646" x="-15.081" y="6.78" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="n" width="54.814" height="64.646" x="-15.081" y="6.78" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="o" width="54.814" height="64.646" x="22.45" y="-1.645" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter><filter id="p" width="39.409" height="43.623" x="32.919" y="11.36" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_2002_17286" stdDeviation="4.596"/></filter></defs></svg>
+</file>
+
+<file path="src/components/AuthorPage.jsx">
+import { useEffect, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { supabase } from '../lib/supabaseClient';
+
+export default function AuthorPage({ session }) {
+  const { id } = useParams();
+  const [profile, setProfile] = useState(null);
+  const [manuscripts, setManuscripts] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const [editingBio, setEditingBio] = useState(false);
+  const [bioDraft, setBioDraft] = useState('');
+
+  const [editingName, setEditingName] = useState(false);
+  const [nameDraft, setNameDraft] = useState('');
+
+  const [saving, setSaving] = useState(false);
+
+  const isOwnProfile = session?.user?.id === id;
+
+  useEffect(() => {
+    fetchProfile();
+    fetchManuscripts();
+  }, [id]);
+
+  async function fetchProfile() {
+    setLoading(true);
+    const { data, error } = await supabase
+      .from('profiles')
+      .select('id, full_name, bio, role')
+      .eq('id', id)
+      .single();
+
+    if (!error) {
+      setProfile(data);
+      setBioDraft(data.bio || '');
+      setNameDraft(data.full_name || '');
+    }
+    setLoading(false);
+  }
+
+  async function fetchManuscripts() {
+    const { data, error } = await supabase
+      .from('manuscripts')
+      .select('id, title, abstract, keywords, category, image_urls, view_count, created_at')
+      .eq('author_id', id)
+      .eq('status', 'published')
+      .order('created_at', { ascending: false });
+
+    if (!error) setManuscripts(data);
+  }
+
+  async function handleSaveBio() {
+    setSaving(true);
+    const { error } = await supabase
+      .from('profiles')
+      .update({ bio: bioDraft })
+      .eq('id', id);
+
+    if (!error) {
+      setProfile((prev) => ({ ...prev, bio: bioDraft }));
+      setEditingBio(false);
+    }
+    setSaving(false);
+  }
+
+  async function handleSaveName() {
+    if (!nameDraft.trim()) return;
+    setSaving(true);
+    const { error } = await supabase
+      .from('profiles')
+      .update({ full_name: nameDraft.trim() })
+      .eq('id', id);
+
+    if (!error) {
+      setProfile((prev) => ({ ...prev, full_name: nameDraft.trim() }));
+      setEditingName(false);
+    }
+    setSaving(false);
+  }
+
+  if (loading) {
+    return (
+      <div className="max-w-3xl mx-auto px-6 py-10">
+        <p className="text-stone-500 text-sm">Loading...</p>
+      </div>
+    );
+  }
+
+  if (!profile) {
+    return (
+      <div className="max-w-3xl mx-auto px-6 py-10">
+        <p className="text-stone-500 text-sm">Author not found.</p>
+        <Link to="/" className="text-sm text-stone-700 underline mt-2 inline-block">
+          Back to archive
+        </Link>
+      </div>
+    );
+  }
+
+  return (
+    <div className="max-w-3xl mx-auto px-6 py-10">
+      <Link to="/" className="text-sm text-stone-500 hover:text-stone-800">
+        ← Back to archive
+      </Link>
+
+      <div className="bg-white border border-stone-200 rounded-lg p-8 mt-4">
+        <div className="flex items-center gap-4">
+          <div className="h-16 w-16 rounded-full bg-stone-200 flex items-center justify-center
+                          text-xl font-serif font-semibold text-stone-600 shrink-0">
+            {profile.full_name?.charAt(0).toUpperCase() || '?'}
+          </div>
+          <div className="flex-1">
+            {editingName ? (
+              <div className="flex items-center gap-2">
+                <input
+                  type="text"
+                  value={nameDraft}
+                  onChange={(e) => setNameDraft(e.target.value)}
+                  className="text-lg font-serif font-semibold text-stone-900 border border-stone-300
+                             rounded-md px-2 py-1 focus:outline-none focus:ring-2 focus:ring-stone-800"
+                />
+                <button
+                  onClick={handleSaveName}
+                  disabled={saving}
+                  className="text-sm font-medium bg-stone-900 text-white px-3 py-1.5
+                             rounded-md hover:bg-stone-700 disabled:opacity-50"
+                >
+                  Save
+                </button>
+                <button
+                  onClick={() => {
+                    setEditingName(false);
+                    setNameDraft(profile.full_name || '');
+                  }}
+                  className="text-sm text-stone-500 hover:text-stone-800"
+                >
+                  Cancel
+                </button>
+              </div>
+            ) : (
+              <div className="flex items-center gap-2">
+                <h1 className="text-xl font-serif font-semibold text-stone-900">
+                  {profile.full_name}
+                </h1>
+                {isOwnProfile && (
+                  <button
+                    onClick={() => setEditingName(true)}
+                    className="text-xs text-stone-500 underline"
+                  >
+                    Edit
+                  </button>
+                )}
+              </div>
+            )}
+            {profile.role === 'editor' && (
+              <span className="text-xs font-medium bg-amber-50 text-amber-700
+                               border border-amber-200 px-2 py-0.5 rounded-full inline-block mt-1">
+                Editor
+              </span>
+            )}
+          </div>
+        </div>
+
+        <div className="mt-5">
+          {editingBio ? (
+            <div>
+              <textarea
+                rows={3}
+                value={bioDraft}
+                onChange={(e) => setBioDraft(e.target.value)}
+                placeholder="Write a short bio..."
+                className="w-full rounded-md border border-stone-300 px-3 py-2 text-sm
+                           focus:outline-none focus:ring-2 focus:ring-stone-800"
+              />
+              <div className="flex gap-2 mt-2">
+                <button
+                  onClick={handleSaveBio}
+                  disabled={saving}
+                  className="text-sm font-medium bg-stone-900 text-white px-4 py-1.5
+                             rounded-md hover:bg-stone-700 disabled:opacity-50"
+                >
+                  {saving ? 'Saving...' : 'Save'}
+                </button>
+                <button
+                  onClick={() => {
+                    setEditingBio(false);
+                    setBioDraft(profile.bio || '');
+                  }}
+                  className="text-sm text-stone-500 hover:text-stone-800"
+                >
+                  Cancel
+                </button>
+              </div>
+            </div>
+          ) : (
+            <div>
+              <p className="text-sm text-stone-700 leading-relaxed">
+                {profile.bio || (isOwnProfile ? 'Add a short bio to introduce yourself.' : 'No bio yet.')}
+              </p>
+              {isOwnProfile && (
+                <button
+                  onClick={() => setEditingBio(true)}
+                  className="text-xs text-stone-500 underline mt-1"
+                >
+                  {profile.bio ? 'Edit bio' : 'Add bio'}
+                </button>
+              )}
+            </div>
+          )}
+        </div>
+      </div>
+
+      <h2 className="text-lg font-serif font-semibold text-stone-900 mt-8 mb-4">
+        Published Research ({manuscripts.length})
+      </h2>
+
+      <div className="grid gap-4">
+        {manuscripts.length === 0 && (
+          <p className="text-sm text-stone-500">No published manuscripts yet.</p>
+        )}
+
+        {manuscripts.map((m) => (
+          <Link
+            key={m.id}
+            to={`/manuscript/${m.id}`}
+            className="block bg-white border border-stone-200 rounded-lg p-5 hover:shadow-sm transition-shadow"
+          >
+            <div className="flex items-center gap-2 mb-1">
+              {m.category && (
+                <span className="text-xs font-medium bg-sky-50 text-sky-700
+                                 border border-sky-200 px-2 py-0.5 rounded-full">
+                  {m.category}
+                </span>
+              )}
+              <span className="text-xs text-stone-400">{m.view_count} views</span>
+            </div>
+            <h3 className="text-base font-serif font-semibold text-stone-900">
+              {m.title}
+            </h3>
+            <p className="text-sm text-stone-600 mt-2 line-clamp-2">{m.abstract}</p>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/AuthPage.jsx">
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { supabase } from '../lib/supabaseClient';
+
+export default function AuthPage() {
+  const [mode, setMode] = useState('login'); // 'login' | 'signup'
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [fullName, setFullName] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [needsConfirmation, setNeedsConfirmation] = useState(false);
+  const [resendSent, setResendSent] = useState(false);
+  const [resetSent, setResetSent] = useState(false);
+  const navigate = useNavigate();
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setLoading(true);
+    setError(null);
+    setNeedsConfirmation(false);
+    setResendSent(false);
+    setResetSent(false);
+
+    try {
+      if (mode === 'signup') {
+        const { error: signUpError } = await supabase.auth.signUp({
+          email,
+          password,
+          options: {
+            data: { full_name: fullName, role: 'student' },
+          },
+        });
+        if (signUpError) throw signUpError;
+      } else {
+        const { error: loginError } = await supabase.auth.signInWithPassword({
+          email,
+          password,
+        });
+        if (loginError) throw loginError;
+      }
+      navigate('/dashboard');
+    } catch (err) {
+      setError(err.message);
+      if (err.message.toLowerCase().includes('email not confirmed')) {
+        setNeedsConfirmation(true);
+      }
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  async function handleResendConfirmation() {
+    if (!email) return;
+    setLoading(true);
+    const { error } = await supabase.auth.resend({ type: 'signup', email });
+    setLoading(false);
+    if (!error) setResendSent(true);
+  }
+
+  async function handleForgotPassword() {
+    if (!email) {
+      setError('Enter your email above first, then click "Forgot password?"');
+      return;
+    }
+    setLoading(true);
+    setError(null);
+    const { error } = await supabase.auth.resetPasswordForEmail(email, {
+      redirectTo: `${window.location.origin}/reset-password`,
+    });
+    setLoading(false);
+    if (error) {
+      setError(error.message);
+    } else {
+      setResetSent(true);
+    }
+  }
+
+  return (
+    <div className="min-h-screen bg-stone-50 flex items-center justify-center px-6">
+      <div className="w-full max-w-sm bg-white border border-stone-200 rounded-lg p-8">
+        <h1 className="text-xl font-serif font-semibold text-stone-900">
+          {mode === 'login' ? 'Sign In' : 'Create Account'}
+        </h1>
+        <p className="text-sm text-stone-500 mt-1">
+          {mode === 'login'
+            ? 'Access your submissions and dashboard.'
+            : 'Join as a student researcher.'}
+        </p>
+
+        {error && (
+          <div className="mt-4 text-sm text-red-700 bg-red-50 border border-red-200 rounded-md px-3 py-2">
+            {error}
+          </div>
+        )}
+
+        {needsConfirmation && !resendSent && (
+          <button
+            onClick={handleResendConfirmation}
+            disabled={loading}
+            className="mt-2 text-sm text-stone-700 underline"
+          >
+            Resend confirmation email
+          </button>
+        )}
+
+        {resendSent && (
+          <p className="mt-2 text-sm text-green-700 bg-green-50 border border-green-200 rounded-md px-3 py-2">
+            Confirmation email sent. Check your inbox.
+          </p>
+        )}
+
+        {resetSent && (
+          <p className="mt-4 text-sm text-green-700 bg-green-50 border border-green-200 rounded-md px-3 py-2">
+            Password reset link sent. Check your email.
+          </p>
+        )}
+
+        <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+          {mode === 'signup' && (
+            <div>
+              <label className="block text-sm font-medium text-stone-700 mb-1">
+                Full Name
+              </label>
+              <input
+                type="text"
+                required
+                value={fullName}
+                onChange={(e) => setFullName(e.target.value)}
+                className="w-full rounded-md border border-stone-300 px-3 py-2 text-sm
+                           focus:outline-none focus:ring-2 focus:ring-stone-800"
+              />
+            </div>
+          )}
+
+          <div>
+            <label className="block text-sm font-medium text-stone-700 mb-1">
+              Email
+            </label>
+            <input
+              type="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full rounded-md border border-stone-300 px-3 py-2 text-sm
+                         focus:outline-none focus:ring-2 focus:ring-stone-800"
+            />
+          </div>
+
+          <div>
+            <div className="flex items-center justify-between mb-1">
+              <label className="block text-sm font-medium text-stone-700">
+                Password
+              </label>
+              {mode === 'login' && (
+                <button
+                  type="button"
+                  onClick={handleForgotPassword}
+                  className="text-xs text-stone-500 underline hover:text-stone-800"
+                >
+                  Forgot password?
+                </button>
+              )}
+            </div>
+            <input
+              type="password"
+              required
+              minLength={6}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="w-full rounded-md border border-stone-300 px-3 py-2 text-sm
+                         focus:outline-none focus:ring-2 focus:ring-stone-800"
+            />
+          </div>
+
+          <button
+            type="submit"
+            disabled={loading}
+            className="w-full bg-stone-900 text-white text-sm font-medium
+                       rounded-md py-2.5 hover:bg-stone-700 transition-colors
+                       disabled:opacity-50"
+          >
+            {loading ? 'Please wait...' : mode === 'login' ? 'Sign In' : 'Sign Up'}
+          </button>
+        </form>
+
+        <button
+          onClick={() => {
+            setMode(mode === 'login' ? 'signup' : 'login');
+            setError(null);
+            setNeedsConfirmation(false);
+            setResendSent(false);
+            setResetSent(false);
+          }}
+          className="mt-5 text-sm text-stone-500 hover:text-stone-800 w-full text-center"
+        >
+          {mode === 'login'
+            ? "Don't have an account? Sign up"
+            : 'Already have an account? Sign in'}
+        </button>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/EditorDashboard.jsx">
+import { useEffect, useState } from 'react';
+import { supabase } from '../lib/supabaseClient';
+
+const SUPPORT_EMAIL = 'destsubhi@gmail.com';
+
+export default function EditorDashboard() {
+  const [manuscripts, setManuscripts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [actioningId, setActioningId] = useState(null);
+  const [helpOpenId, setHelpOpenId] = useState(null);
+
+  useEffect(() => {
+    fetchPending();
+  }, []);
+
+  async function fetchPending() {
+    setLoading(true);
+    const { data, error } = await supabase
+      .from('manuscripts')
+      .select('id, title, abstract, keywords, file_url, status, featured, created_at, profiles(full_name, email)')
+      .order('created_at', { ascending: false });
+
+    if (error) {
+      console.error(error.message);
+    } else {
+      setManuscripts(data);
+    }
+    setLoading(false);
+  }
+
+  async function updateStatus(id, status) {
+    setActioningId(id);
+    const { error } = await supabase
+      .from('manuscripts')
+      .update({ status })
+      .eq('id', id);
+
+    if (error) {
+      console.error(error.message);
+      alert('Failed to update: ' + error.message);
+    } else {
+      setManuscripts((prev) =>
+        prev.map((m) => (m.id === id ? { ...m, status } : m))
+      );
+    }
+    setActioningId(null);
+  }
+
+  async function toggleFeatured(id, current) {
+    setActioningId(id);
+    const { error } = await supabase
+      .from('manuscripts')
+      .update({ featured: !current })
+      .eq('id', id);
+
+    if (error) {
+      console.error(error.message);
+      alert('Failed to update: ' + error.message);
+    } else {
+      setManuscripts((prev) =>
+        prev.map((m) => (m.id === id ? { ...m, featured: !current } : m))
+      );
+    }
+    setActioningId(null);
+  }
+
+  const statusStyles = {
+    pending_review: 'bg-amber-50 text-amber-700 border-amber-200',
+    published: 'bg-green-50 text-green-700 border-green-200',
+    rejected: 'bg-red-50 text-red-700 border-red-200',
+  };
+
+  return (
+    <div className="max-w-4xl mx-auto px-6 py-10">
+      <h1 className="text-2xl font-serif font-semibold text-stone-900">
+        Editor Review Queue
+      </h1>
+      <p className="text-stone-500 text-sm mt-1">
+        Review, publish, or reject submitted manuscripts.
+      </p>
+
+      {loading && <p className="text-sm text-stone-500 mt-6">Loading...</p>}
+
+      <div className="mt-8 space-y-4">
+        {manuscripts.map((m) => (
+          <div
+            key={m.id}
+            className="bg-white border border-stone-200 rounded-lg p-6"
+          >
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <h2 className="font-serif font-semibold text-stone-900">
+                  {m.title}
+                </h2>
+                <p className="text-xs text-stone-500 mt-1">
+                  {m.profiles?.full_name} - {m.profiles?.email} -{' '}
+                  {new Date(m.created_at).toLocaleDateString()}
+                </p>
+              </div>
+              <div className="flex items-center gap-2 shrink-0">
+                {m.featured && (
+                  <span className="text-xs font-medium bg-amber-50 text-amber-700
+                                   border border-amber-200 px-2.5 py-1 rounded-full">
+                    Featured
+                  </span>
+                )}
+                <span
+                  className={`text-xs font-medium px-2.5 py-1 rounded-full border ${statusStyles[m.status]}`}
+                >
+                  {m.status.replace('_', ' ')}
+                </span>
+              </div>
+            </div>
+
+            <p className="text-sm text-stone-700 mt-3 leading-relaxed">
+              {m.abstract}
+            </p>
+
+            <div className="flex flex-wrap gap-2 mt-3">
+              {m.keywords?.map((k) => (
+                <span
+                  key={k}
+                  className="text-xs bg-stone-100 text-stone-600 px-2.5 py-1 rounded-full"
+                >
+                  {k}
+                </span>
+              ))}
+            </div>
+
+            <div className="flex items-center gap-3 mt-5">
+              <a
+                href={m.file_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-medium text-stone-700 underline"
+              >
+                View PDF
+              </a>
+
+              {m.status === 'published' && (
+                <button
+                  disabled={actioningId === m.id}
+                  onClick={() => toggleFeatured(m.id, m.featured)}
+                  className="text-sm font-medium text-amber-700 border border-amber-200
+                             px-4 py-1.5 rounded-md hover:bg-amber-50 disabled:opacity-50"
+                >
+                  {m.featured ? 'Unfeature' : 'Feature'}
+                </button>
+              )}
+
+              <div className="ml-auto flex items-center gap-3">
+                <div className="relative">
+                  <button
+                    onClick={() => setHelpOpenId(helpOpenId === m.id ? null : m.id)}
+                    className="flex items-center gap-1 text-sm font-medium text-stone-500
+                               border border-stone-200 rounded-md px-3 py-1.5 hover:bg-stone-50"
+                  >
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-2.5 2-2.5 3.5" />
+                      <circle cx="12" cy="17" r="0.5" fill="currentColor" />
+                    </svg>
+                    Help
+                  </button>
+
+                  {helpOpenId === m.id && (
+                    <div className="absolute right-0 mt-2 w-60 bg-white border border-stone-200
+                                     rounded-md shadow-lg z-10 p-4">
+                      <p className="text-sm font-medium text-stone-800 mb-1">Need help reviewing?</p>
+                      <a
+                        href={`mailto:${SUPPORT_EMAIL}`}
+                        className="block text-center text-sm font-medium text-white bg-stone-900
+                                   hover:bg-stone-700 rounded-md py-2 transition-colors mt-2"
+                      >
+                        Contact Support
+                      </a>
+                    </div>
+                  )}
+                </div>
+
+                {m.status !== 'published' && (
+                  <button
+                    disabled={actioningId === m.id}
+                    onClick={() => updateStatus(m.id, 'published')}
+                    className="text-sm font-medium bg-stone-900 text-white
+                               px-4 py-1.5 rounded-md hover:bg-stone-700 disabled:opacity-50"
+                  >
+                    Publish
+                  </button>
+                )}
+                {m.status !== 'rejected' && (
+                  <button
+                    disabled={actioningId === m.id}
+                    onClick={() => updateStatus(m.id, 'rejected')}
+                    className="text-sm font-medium text-red-600 border border-red-200
+                               px-4 py-1.5 rounded-md hover:bg-red-50 disabled:opacity-50"
+                  >
+                    Reject
+                  </button>
+                )}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/LandingPage.jsx">
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import { supabase } from '../lib/supabaseClient';
+
+const SORT_OPTIONS = [
+  { key: 'latest', label: 'Latest' },
+  { key: 'featured', label: 'Featured posts' },
+  { key: 'popular', label: 'Most popular' },
+  { key: '7days', label: '7 days popular' },
+  { key: 'review', label: 'By review score' },
+  { key: 'random', label: 'Random' },
+];
+
+const CATEGORIES = [
+  'Biology',
+  'Chemistry',
+  'Computer Science',
+  'Math',
+  'Neuroscience',
+  'Physics',
+  'Policy',
+  'Social Sciences',
+];
+
+export default function LandingPage() {
+  const [manuscripts, setManuscripts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [query, setQuery] = useState('');
+  const [sortKey, setSortKey] = useState('latest');
+  const [sortOpen, setSortOpen] = useState(false);
+  const [subjectsOpen, setSubjectsOpen] = useState(true);
+  const [selectedCategory, setSelectedCategory] = useState(null);
+  const [pdfModalUrl, setPdfModalUrl] = useState(null);
+
+  useEffect(() => {
+    fetchManuscripts();
+  }, []);
+
+  async function fetchManuscripts() {
+    setLoading(true);
+    const { data, error } = await supabase
+      .from('manuscripts')
+      .select(
+        'id, title, abstract, keywords, category, file_url, image_urls, view_count, featured, author_id, created_at, profiles(full_name), ratings(rating)'
+      )
+      .eq('status', 'published')
+      .order('created_at', { ascending: false });
+
+    if (error) {
+      console.error('Error fetching manuscripts:', error.message);
+    } else {
+      setManuscripts(data);
+    }
+    setLoading(false);
+  }
+
+  function avgRating(m) {
+    if (!m.ratings || m.ratings.length === 0) return null;
+    const sum = m.ratings.reduce((acc, r) => acc + r.rating, 0);
+    return sum / m.ratings.length;
+  }
+
+  const filtered = manuscripts.filter((m) => {
+    const q = query.toLowerCase();
+    const matchesQuery =
+      m.title.toLowerCase().includes(q) ||
+      m.keywords?.some((k) => k.toLowerCase().includes(q)) ||
+      m.profiles?.full_name?.toLowerCase().includes(q);
+    const matchesCategory = !selectedCategory || m.category === selectedCategory;
+    return matchesQuery && matchesCategory;
+  });
+
+  function sortManuscripts(list) {
+    const copy = [...list];
+    const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
+
+    switch (sortKey) {
+      case 'featured':
+        return copy
+          .filter((m) => m.featured)
+          .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+      case 'popular':
+        return copy.sort((a, b) => b.view_count - a.view_count);
+      case '7days':
+        return copy
+          .filter((m) => new Date(m.created_at).getTime() >= sevenDaysAgo)
+          .sort((a, b) => b.view_count - a.view_count);
+      case 'review':
+        return copy.sort((a, b) => {
+          const ra = avgRating(a) ?? -1;
+          const rb = avgRating(b) ?? -1;
+          return rb - ra;
+        });
+      case 'random':
+        for (let i = copy.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [copy[i], copy[j]] = [copy[j], copy[i]];
+        }
+        return copy;
+      case 'latest':
+      default:
+        return copy.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+    }
+  }
+
+  const sorted = sortManuscripts(filtered);
+  const currentLabel = SORT_OPTIONS.find((o) => o.key === sortKey)?.label || 'Latest';
+
+  return (
+    <div className="min-h-screen bg-stone-50">
+      <header className="border-b border-stone-200 bg-white">
+        <div className="max-w-6xl mx-auto px-6 py-8">
+          <div className="flex items-center gap-3">
+            <img src="/logo.png" alt="SORA" className="h-12 w-12 object-contain" />
+            <div>
+              <h1 className="text-3xl font-serif font-semibold text-stone-900">
+                SORA
+              </h1>
+              <p className="text-stone-500 text-sm">
+                Student Open Research Archive - Accessible - Peer-Reviewed - Free
+              </p>
+            </div>
+          </div>
+
+          <input
+            type="text"
+            placeholder="Search by title, keyword, or author..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            className="mt-6 w-full rounded-md border border-stone-300 px-4 py-2.5
+                       text-sm focus:outline-none focus:ring-2 focus:ring-stone-800
+                       focus:border-transparent"
+          />
+        </div>
+      </header>
+
+      <main className="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row gap-8">
+        <aside className="sm:w-48 shrink-0">
+          <button
+            onClick={() => setSubjectsOpen((o) => !o)}
+            className="flex items-center justify-between w-full text-sm font-bold
+                       text-stone-900 uppercase tracking-wide pb-2 border-b-2 border-sky-500"
+          >
+            Subjects
+            <svg
+              width="12" height="12" viewBox="0 0 12 12" fill="none"
+              className={`transition-transform ${subjectsOpen ? 'rotate-180' : ''}`}
+            >
+              <path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.5" />
+            </svg>
+          </button>
+
+          {subjectsOpen && (
+            <ul className="mt-3 space-y-2.5">
+              <li>
+                <button
+                  onClick={() => setSelectedCategory(null)}
+                  className={`text-sm ${
+                    !selectedCategory
+                      ? 'font-semibold text-stone-900'
+                      : 'text-stone-600 hover:text-stone-900'
+                  }`}
+                >
+                  All
+                </button>
+              </li>
+              {CATEGORIES.map((cat) => (
+                <li key={cat}>
+                  <button
+                    onClick={() => setSelectedCategory(cat)}
+                    className={`text-sm text-left ${
+                      selectedCategory === cat
+                        ? 'font-semibold text-stone-900'
+                        : 'text-stone-600 hover:text-stone-900'
+                    }`}
+                  >
+                    {cat}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          )}
+        </aside>
+
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center justify-between mb-5">
+            <p className="text-sm text-stone-500">
+              {sorted.length} {sorted.length === 1 ? 'result' : 'results'}
+            </p>
+
+            <div className="relative">
+              <button
+                onClick={() => setSortOpen((o) => !o)}
+                className="flex items-center gap-2 text-sm font-medium text-stone-700
+                           bg-white border border-stone-300 rounded-md px-4 py-2
+                           hover:bg-stone-50 transition-colors"
+              >
+                {currentLabel.toUpperCase()}
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                  <path d="M2 4l4 4 4-4" stroke="currentColor" strokeWidth="1.5" />
+                </svg>
+              </button>
+
+              {sortOpen && (
+                <div className="absolute right-0 mt-1 w-48 bg-white border border-stone-200
+                                 rounded-md shadow-lg z-10 py-1">
+                  {SORT_OPTIONS.map((opt) => (
+                    <button
+                      key={opt.key}
+                      onClick={() => {
+                        setSortKey(opt.key);
+                        setSortOpen(false);
+                      }}
+                      className={`block w-full text-left px-4 py-2 text-sm hover:bg-stone-50 ${
+                        sortKey === opt.key
+                          ? 'text-stone-900 font-medium'
+                          : 'text-stone-600'
+                      }`}
+                    >
+                      {opt.label}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+
+          {loading && <p className="text-stone-500 text-sm">Loading manuscripts...</p>}
+
+          {!loading && sorted.length === 0 && (
+            <p className="text-stone-500 text-sm">No manuscripts found.</p>
+          )}
+
+          <div className="grid gap-5">
+            {sorted.map((m) => {
+              const rating = avgRating(m);
+              return (
+                <article
+                  key={m.id}
+                  className="bg-white border border-stone-200 rounded-lg p-6
+                             hover:shadow-sm transition-shadow"
+                >
+                  {m.image_urls && m.image_urls.length > 0 && (
+                    <img
+                      src={m.image_urls[0]}
+                      alt=""
+                      className="w-full h-48 object-cover rounded-md mb-4"
+                    />
+                  )}
+
+                  <div className="flex flex-wrap items-center gap-2 mb-1">
+                    {m.category && (
+                      <span className="text-xs font-medium bg-sky-50 text-sky-700
+                                       border border-sky-200 px-2 py-0.5 rounded-full">
+                        {m.category}
+                      </span>
+                    )}
+                    {m.featured && (
+                      <span className="text-xs font-medium bg-amber-50 text-amber-700
+                                       border border-amber-200 px-2 py-0.5 rounded-full">
+                        Featured
+                      </span>
+                    )}
+                    {rating !== null && (
+                      <span className="text-xs text-stone-500">
+                        ★ {rating.toFixed(1)} ({m.ratings.length})
+                      </span>
+                    )}
+                    <span className="text-xs text-stone-400">
+                      {m.view_count} views
+                    </span>
+                  </div>
+
+                  <Link to={`/manuscript/${m.id}`}>
+                    <h2 className="text-lg font-serif font-semibold text-stone-900 hover:underline">
+                      {m.title}
+                    </h2>
+                  </Link>
+                  <p className="text-sm text-stone-500 mt-1">
+                    <Link to={`/author/${m.author_id}`} className="hover:underline">
+                      {m.profiles?.full_name || 'Unknown Author'}
+                    </Link>{' '}
+                    - {new Date(m.created_at).toLocaleDateString()}
+                  </p>
+                  <p className="text-stone-700 text-sm mt-3 leading-relaxed">
+                    {m.abstract}
+                  </p>
+
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {m.keywords?.map((k) => (
+                      <span
+                        key={k}
+                        className="text-xs bg-stone-100 text-stone-600 px-2.5 py-1 rounded-full"
+                      >
+                        {k}
+                      </span>
+                    ))}
+                  </div>
+
+                  <div className="flex flex-wrap items-center gap-3 mt-5">
+                    <Link
+                      to={`/manuscript/${m.id}`}
+                      className="text-sm font-medium text-stone-700 underline"
+                    >
+                      View & Comment
+                    </Link>
+                    <button
+                      onClick={() => setPdfModalUrl(m.file_url)}
+                      className="text-sm font-medium text-stone-700 border border-stone-300
+                                 rounded-md px-4 py-2 hover:bg-stone-50 transition-colors"
+                    >
+                      Open PDF
+                    </button>
+                    <a
+                      href={m.file_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block text-sm font-medium text-white
+                                 bg-stone-900 hover:bg-stone-700 rounded-md px-4 py-2
+                                 transition-colors"
+                    >
+                      Download PDF
+                    </a>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </main>
+
+      {pdfModalUrl && (
+        <div
+          className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-6"
+          onClick={() => setPdfModalUrl(null)}
+        >
+          <div
+            className="bg-white rounded-lg w-full max-w-4xl h-[85vh] flex flex-col"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between px-4 py-3 border-b border-stone-200">
+              <p className="text-sm font-medium text-stone-700">PDF Preview</p>
+              <button
+                onClick={() => setPdfModalUrl(null)}
+                className="text-stone-500 hover:text-stone-800 text-sm"
+              >
+                Close ✕
+              </button>
+            </div>
+            <iframe
+              src={pdfModalUrl}
+              title="PDF preview"
+              className="flex-1 w-full rounded-b-lg"
+            />
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/ManuscriptPage.jsx">
+import { useEffect, useState } from 'react';
+import { useParams, Link } from 'react-router-dom';
+import { supabase } from '../lib/supabaseClient';
+
+export default function ManuscriptPage({ session }) {
+  const { id } = useParams();
+  const [manuscript, setManuscript] = useState(null);
+  const [comments, setComments] = useState([]);
+  const [ratings, setRatings] = useState([]);
+  const [myRating, setMyRating] = useState(0);
+  const [loading, setLoading] = useState(true);
+  const [newComment, setNewComment] = useState('');
+  const [posting, setPosting] = useState(false);
+  const [error, setError] = useState(null);
+  const [showPdf, setShowPdf] = useState(false);
+
+  useEffect(() => {
+    fetchManuscript();
+    fetchComments();
+    fetchRatings();
+    supabase.rpc('increment_manuscript_views', { manuscript_id: id });
+  }, [id]);
+
+  async function fetchManuscript() {
+    setLoading(true);
+    const { data, error } = await supabase
+      .from('manuscripts')
+      .select(
+        'id, title, abstract, keywords, category, file_url, image_urls, view_count, author_id, published_at, created_at, profiles(full_name)'
+      )
+      .eq('id', id)
+      .single();
+
+    if (error) {
+      console.error(error.message);
+      setManuscript(null);
+    } else {
+      setManuscript(data);
+    }
+    setLoading(false);
+  }
+
+  async function fetchComments() {
+    const { data, error } = await supabase
+      .from('comments')
+      .select('id, content, created_at, author_id, profiles(full_name)')
+      .eq('manuscript_id', id)
+      .order('created_at', { ascending: true });
+
+    if (!error) setComments(data);
+  }
+
+  async function fetchRatings() {
+    const { data, error } = await supabase
+      .from('ratings')
+      .select('rating, author_id')
+      .eq('manuscript_id', id);
+
+    if (!error) {
+      setRatings(data);
+      if (session) {
+        const mine = data.find((r) => r.author_id === session.user.id);
+        if (mine) setMyRating(mine.rating);
+      }
+    }
+  }
+
+  async function handleRate(value) {
+    if (!session) return;
+    setMyRating(value);
+
+    const { error } = await supabase
+      .from('ratings')
+      .upsert(
+        { manuscript_id: id, author_id: session.user.id, rating: value },
+        { onConflict: 'manuscript_id,author_id' }
+      );
+
+    if (!error) fetchRatings();
+  }
+
+  async function handlePostComment(e) {
+    e.preventDefault();
+    if (!newComment.trim()) return;
+
+    setPosting(true);
+    setError(null);
+
+    const { error } = await supabase.from('comments').insert({
+      manuscript_id: id,
+      author_id: session.user.id,
+      content: newComment.trim(),
+    });
+
+    if (error) {
+      setError(error.message);
+    } else {
+      setNewComment('');
+      fetchComments();
+    }
+    setPosting(false);
+  }
+
+  async function handleDeleteComment(commentId) {
+    const { error } = await supabase.from('comments').delete().eq('id', commentId);
+    if (!error) {
+      setComments((prev) => prev.filter((c) => c.id !== commentId));
+    }
+  }
+
+  const avgRating =
+    ratings.length > 0
+      ? (ratings.reduce((acc, r) => acc + r.rating, 0) / ratings.length).toFixed(1)
+      : null;
+
+  if (loading) {
+    return (
+      <div className="max-w-3xl mx-auto px-6 py-10">
+        <p className="text-stone-500 text-sm">Loading...</p>
+      </div>
+    );
+  }
+
+  if (!manuscript) {
+    return (
+      <div className="max-w-3xl mx-auto px-6 py-10">
+        <p className="text-stone-500 text-sm">Manuscript not found.</p>
+        <Link to="/" className="text-sm text-stone-700 underline mt-2 inline-block">
+          Back to archive
+        </Link>
+      </div>
+    );
+  }
+
+  return (
+    <div className="max-w-3xl mx-auto px-6 py-10">
+      <Link to="/" className="text-sm text-stone-500 hover:text-stone-800">
+        ← Back to archive
+      </Link>
+
+      <article className="bg-white border border-stone-200 rounded-lg p-8 mt-4">
+        {manuscript.image_urls && manuscript.image_urls.length > 0 && (
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6">
+            {manuscript.image_urls.map((url, i) => (
+              <img
+                key={i}
+                src={url}
+                alt=""
+                className="w-full h-32 object-cover rounded-md border border-stone-200"
+              />
+            ))}
+          </div>
+        )}
+
+        {manuscript.published_at && (
+          <p className="text-xs font-medium text-green-700 bg-green-50 border border-green-200
+                       inline-block px-3 py-1 rounded-full mb-4">
+            Peer-reviewed and approved on{' '}
+            {new Date(manuscript.published_at).toLocaleDateString()}
+          </p>
+        )}
+
+        {manuscript.category && (
+          <span className="block w-fit text-xs font-medium bg-sky-50 text-sky-700
+                           border border-sky-200 px-2.5 py-1 rounded-full mb-3">
+            {manuscript.category}
+          </span>
+        )}
+
+        <h1 className="text-2xl font-serif font-semibold text-stone-900">
+          {manuscript.title}
+        </h1>
+        <div className="flex flex-wrap items-center gap-3 mt-2">
+          <p className="text-sm text-stone-500">
+            <Link to={`/author/${manuscript.author_id}`} className="hover:underline">
+              {manuscript.profiles?.full_name || 'Unknown Author'}
+            </Link>{' '}
+            - {new Date(manuscript.created_at).toLocaleDateString()}
+          </p>
+          <span className="text-xs text-stone-400">{manuscript.view_count} views</span>
+        </div>
+
+        <p className="text-stone-700 text-sm mt-5 leading-relaxed whitespace-pre-line">
+          {manuscript.abstract}
+        </p>
+
+        <div className="flex flex-wrap gap-2 mt-5">
+          {manuscript.keywords?.map((k) => (
+            <span
+              key={k}
+              className="text-xs bg-stone-100 text-stone-600 px-2.5 py-1 rounded-full"
+            >
+              {k}
+            </span>
+          ))}
+        </div>
+
+        <div className="flex items-center gap-3 mt-6">
+          <button
+            onClick={() => setShowPdf((s) => !s)}
+            className="text-sm font-medium text-stone-700 border border-stone-300
+                       rounded-md px-4 py-2 hover:bg-stone-50 transition-colors"
+          >
+            {showPdf ? 'Hide PDF' : 'Open PDF'}
+          </button>
+          <a
+            href={manuscript.file_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block text-sm font-medium text-white
+                       bg-stone-900 hover:bg-stone-700 rounded-md px-4 py-2
+                       transition-colors"
+          >
+            Download PDF
+          </a>
+        </div>
+
+        {showPdf && (
+          <iframe
+            src={manuscript.file_url}
+            title="PDF preview"
+            className="w-full h-[70vh] mt-4 rounded-md border border-stone-200"
+          />
+        )}
+
+        <div className="mt-6 pt-6 border-t border-stone-200">
+          <p className="text-sm font-medium text-stone-700 mb-1">
+            {avgRating ? `${avgRating} average` : 'No ratings yet'}{' '}
+            {ratings.length > 0 && `(${ratings.length})`}
+          </p>
+          <div className="flex gap-1">
+            {[1, 2, 3, 4, 5].map((star) => (
+              <button
+                key={star}
+                disabled={!session}
+                onClick={() => handleRate(star)}
+                className={`text-2xl leading-none ${
+                  star <= myRating ? 'text-amber-500' : 'text-stone-300'
+                } ${session ? 'hover:text-amber-400 cursor-pointer' : 'cursor-not-allowed'}`}
+              >
+                ★
+              </button>
+            ))}
+          </div>
+          {!session && (
+            <p className="text-xs text-stone-400 mt-1">
+              <Link to="/auth" className="underline">Sign in</Link> to leave a rating.
+            </p>
+          )}
+        </div>
+      </article>
+
+      <section className="mt-8">
+        <h2 className="text-lg font-serif font-semibold text-stone-900 mb-4">
+          Comments {comments.length > 0 && `(${comments.length})`}
+        </h2>
+
+        {session ? (
+          <form onSubmit={handlePostComment} className="mb-6">
+            <textarea
+              rows={3}
+              value={newComment}
+              onChange={(e) => setNewComment(e.target.value)}
+              placeholder="Share a thought or question about this research..."
+              className="w-full rounded-md border border-stone-300 px-4 py-2.5 text-sm
+                         focus:outline-none focus:ring-2 focus:ring-stone-800"
+            />
+            {error && <p className="text-sm text-red-600 mt-1">{error}</p>}
+            <button
+              type="submit"
+              disabled={posting || !newComment.trim()}
+              className="mt-2 text-sm font-medium bg-stone-900 text-white px-4 py-2
+                         rounded-md hover:bg-stone-700 transition-colors disabled:opacity-50"
+            >
+              {posting ? 'Posting...' : 'Post Comment'}
+            </button>
+          </form>
+        ) : (
+          <p className="text-sm text-stone-500 mb-6">
+            <Link to="/auth" className="underline text-stone-700">Sign in</Link> to leave a comment.
+          </p>
+        )}
+
+        <div className="space-y-4">
+          {comments.length === 0 && (
+            <p className="text-sm text-stone-500">No comments yet. Be the first to respond.</p>
+          )}
+
+          {comments.map((c) => (
+            <div key={c.id} className="border border-stone-200 rounded-lg p-4 bg-white">
+              <div className="flex items-center justify-between">
+                <p className="text-sm font-medium text-stone-800">
+                  {c.profiles?.full_name || 'Anonymous'}
+                </p>
+                <div className="flex items-center gap-3">
+                  <span className="text-xs text-stone-400">
+                    {new Date(c.created_at).toLocaleDateString()}
+                  </span>
+                  {session?.user?.id === c.author_id && (
+                    <button
+                      onClick={() => handleDeleteComment(c.id)}
+                      className="text-xs text-red-500 hover:text-red-700"
+                    >
+                      Delete
+                    </button>
+                  )}
+                </div>
+              </div>
+              <p className="text-sm text-stone-700 mt-2 leading-relaxed">{c.content}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/ResetPasswordPage.jsx">
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { supabase } from '../lib/supabaseClient';
+
+export default function ResetPasswordPage() {
+  const [password, setPassword] = useState('');
+  const [confirm, setConfirm] = useState('');
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [done, setDone] = useState(false);
+  const navigate = useNavigate();
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+    setError(null);
+
+    if (password.length < 6) {
+      setError('Password must be at least 6 characters.');
+      return;
+    }
+    if (password !== confirm) {
+      setError('Passwords do not match.');
+      return;
+    }
+
+    setLoading(true);
+    const { error } = await supabase.auth.updateUser({ password });
+    setLoading(false);
+
+    if (error) {
+      setError(error.message);
+    } else {
+      setDone(true);
+      setTimeout(() => navigate('/'), 2000);
+    }
+  }
+
+  return (
+    <div className="min-h-screen bg-stone-50 flex items-center justify-center px-6">
+      <div className="w-full max-w-sm bg-white border border-stone-200 rounded-lg p-8">
+        <h1 className="text-xl font-serif font-semibold text-stone-900">
+          Set a New Password
+        </h1>
+        <p className="text-sm text-stone-500 mt-1">
+          Choose a new password for your account.
+        </p>
+
+        {done ? (
+          <p className="text-sm text-green-700 bg-green-50 border border-green-200 rounded-md px-3 py-2 mt-4">
+            Password updated! Redirecting you now...
+          </p>
+        ) : (
+          <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+            {error && (
+              <p className="text-sm text-red-700 bg-red-50 border border-red-200 rounded-md px-3 py-2">
+                {error}
+              </p>
+            )}
+            <div>
+              <label className="block text-sm font-medium text-stone-700 mb-1">
+                New Password
+              </label>
+              <input
+                type="password"
+                required
+                minLength={6}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                className="w-full rounded-md border border-stone-300 px-3 py-2 text-sm
+                           focus:outline-none focus:ring-2 focus:ring-stone-800"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-stone-700 mb-1">
+                Confirm Password
+              </label>
+              <input
+                type="password"
+                required
+                minLength={6}
+                value={confirm}
+                onChange={(e) => setConfirm(e.target.value)}
+                className="w-full rounded-md border border-stone-300 px-3 py-2 text-sm
+                           focus:outline-none focus:ring-2 focus:ring-stone-800"
+              />
+            </div>
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full bg-stone-900 text-white text-sm font-medium rounded-md py-2.5
+                         hover:bg-stone-700 transition-colors disabled:opacity-50"
+            >
+              {loading ? 'Updating...' : 'Update Password'}
+            </button>
+          </form>
+        )}
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/StudentDashboard.jsx">
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { supabase } from '../lib/supabaseClient';
+
+const STEPS = ['Details', 'Abstract & Keywords', 'Cover Images', 'Upload PDF', 'Review'];
+
+const CATEGORIES = [
+  'Biology',
+  'Chemistry',
+  'Computer Science',
+  'Math',
+  'Neuroscience',
+  'Physics',
+  'Policy',
+  'Social Sciences',
+];
+
+export default function StudentDashboard({ user }) {
+  const [step, setStep] = useState(0);
+  const [submitting, setSubmitting] = useState(false);
+  const [message, setMessage] = useState(null);
+
+  const [form, setForm] = useState({
+    title: '',
+    category: '',
+    abstract: '',
+    keywords: '',
+    images: [],
+    file: null,
+  });
+
+  function update(field, value) {
+    setForm((prev) => ({ ...prev, [field]: value }));
+  }
+
+  function next() {
+    setStep((s) => Math.min(s + 1, STEPS.length - 1));
+  }
+  function back() {
+    setStep((s) => Math.max(s - 1, 0));
+  }
+
+  function handleDrop(e) {
+    e.preventDefault();
+    const file = e.dataTransfer.files?.[0];
+    if (file && file.type === 'application/pdf') {
+      update('file', file);
+    } else {
+      setMessage({ type: 'error', text: 'Please upload a PDF file.' });
+    }
+  }
+
+  function handleImagesChange(fileList) {
+    const files = Array.from(fileList).filter((f) => f.type.startsWith('image/'));
+    update('images', [...form.images, ...files].slice(0, 6));
+  }
+
+  function removeImage(index) {
+    update('images', form.images.filter((_, i) => i !== index));
+  }
+
+  async function handleSubmit() {
+    if (!form.title || !form.abstract || !form.file) {
+      setMessage({ type: 'error', text: 'Please complete all required fields.' });
+      return;
+    }
+
+    setSubmitting(true);
+    setMessage(null);
+
+    try {
+      const imageUrls = [];
+      for (let i = 0; i < form.images.length; i++) {
+        const img = form.images[i];
+        const imgExt = img.name.split('.').pop();
+        const imgPath = `images/${user.id}/${Date.now()}-${i}.${imgExt}`;
+
+        const { error: imgUploadError } = await supabase.storage
+          .from('manuscripts-bucket')
+          .upload(imgPath, img, { cacheControl: '3600', upsert: false });
+
+        if (imgUploadError) throw imgUploadError;
+
+        const { data: imgUrlData } = supabase.storage
+          .from('manuscripts-bucket')
+          .getPublicUrl(imgPath);
+
+        imageUrls.push(imgUrlData.publicUrl);
+      }
+
+      const fileExt = form.file.name.split('.').pop();
+      const filePath = `${user.id}/${Date.now()}-${crypto.randomUUID()}.${fileExt}`;
+
+      const { error: uploadError } = await supabase.storage
+        .from('manuscripts-bucket')
+        .upload(filePath, form.file, {
+          cacheControl: '3600',
+          upsert: false,
+          contentType: 'application/pdf',
+        });
+
+      if (uploadError) throw uploadError;
+
+      const { data: publicUrlData } = supabase.storage
+        .from('manuscripts-bucket')
+        .getPublicUrl(filePath);
+
+      const fileUrl = publicUrlData.publicUrl;
+
+      const keywordsArray = form.keywords
+        .split(',')
+        .map((k) => k.trim())
+        .filter(Boolean);
+
+      const { error: insertError } = await supabase.from('manuscripts').insert({
+        title: form.title,
+        category: form.category || null,
+        abstract: form.abstract,
+        keywords: keywordsArray,
+        author_id: user.id,
+        file_url: fileUrl,
+        image_urls: imageUrls,
+        status: 'pending_review',
+      });
+
+      if (insertError) throw insertError;
+
+      setMessage({ type: 'success', text: 'Manuscript submitted for review!' });
+      setForm({ title: '', category: '', abstract: '', keywords: '', images: [], file: null });
+      setStep(0);
+    } catch (err) {
+      console.error(err);
+      setMessage({ type: 'error', text: err.message || 'Submission failed.' });
+    } finally {
+      setSubmitting(false);
+    }
+  }
+
+  return (
+    <div className="max-w-2xl mx-auto px-6 py-10">
+      <div className="flex items-center justify-between">
+        <h1 className="text-2xl font-serif font-semibold text-stone-900">
+          Submit a Manuscript
+        </h1>
+        <Link to="/guidelines" className="text-sm text-stone-600 underline hover:text-stone-900">
+          Submission Guidelines
+        </Link>
+      </div>
+
+      <div className="flex items-center gap-2 mt-6 mb-8">
+        {STEPS.map((label, i) => (
+          <div key={label} className="flex items-center gap-2 flex-1">
+            <div
+              className={`h-8 w-8 shrink-0 rounded-full flex items-center justify-center text-xs font-medium ${
+                i <= step ? 'bg-stone-900 text-white' : 'bg-stone-200 text-stone-500'
+              }`}
+            >
+              {i + 1}
+            </div>
+            {i < STEPS.length - 1 && (
+              <div className={`h-px flex-1 ${i < step ? 'bg-stone-900' : 'bg-stone-200'}`} />
+            )}
+          </div>
+        ))}
+      </div>
+
+      {message && (
+        <div
+          className={`mb-6 text-sm rounded-md px-4 py-3 ${
+            message.type === 'error'
+              ? 'bg-red-50 text-red-700 border border-red-200'
+              : 'bg-green-50 text-green-700 border border-green-200'
+          }`}
+        >
+          {message.text}
+        </div>
+      )}
+
+      <div className="bg-white border border-stone-200 rounded-lg p-6">
+        {step === 0 && (
+          <div className="space-y-4">
+            <div>
+              <label className="block text-sm font-medium text-stone-700 mb-1">
+                Manuscript Title
+              </label>
+              <input
+                type="text"
+                value={form.title}
+                onChange={(e) => update('title', e.target.value)}
+                className="w-full rounded-md border border-stone-300 px-4 py-2.5 text-sm
+                           focus:outline-none focus:ring-2 focus:ring-stone-800"
+                placeholder="e.g. Machine Learning Approaches to Coral Reef Monitoring"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-stone-700 mb-1">
+                Subject
+              </label>
+              <select
+                value={form.category}
+                onChange={(e) => update('category', e.target.value)}
+                className="w-full rounded-md border border-stone-300 px-4 py-2.5 text-sm
+                           focus:outline-none focus:ring-2 focus:ring-stone-800 bg-white"
+              >
+                <option value="">Select a subject...</option>
+                {CATEGORIES.map((cat) => (
+                  <option key={cat} value={cat}>{cat}</option>
+                ))}
+              </select>
+            </div>
+          </div>
+        )}
+
+        {step === 1 && (
+          <div className="space-y-5">
+            <div>
+              <label className="block text-sm font-medium text-stone-700 mb-1">
+                Abstract
+              </label>
+              <textarea
+                rows={6}
+                value={form.abstract}
+                onChange={(e) => update('abstract', e.target.value)}
+                className="w-full rounded-md border border-stone-300 px-4 py-2.5 text-sm
+                           focus:outline-none focus:ring-2 focus:ring-stone-800"
+                placeholder="Summarize your research..."
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-stone-700 mb-1">
+                Keywords (comma-separated)
+              </label>
+              <input
+                type="text"
+                value={form.keywords}
+                onChange={(e) => update('keywords', e.target.value)}
+                className="w-full rounded-md border border-stone-300 px-4 py-2.5 text-sm
+                           focus:outline-none focus:ring-2 focus:ring-stone-800"
+                placeholder="ecology, machine learning, coral reefs"
+              />
+            </div>
+          </div>
+        )}
+
+        {step === 2 && (
+          <div className="space-y-4">
+            <p className="text-sm text-stone-500">
+              Optional. Add up to 6 images (figures, diagrams, photos) to feature with your research.
+            </p>
+
+            <div
+              className="border-2 border-dashed border-stone-300 rounded-lg p-8 text-center
+                         hover:border-stone-500 transition-colors"
+            >
+              <label className="text-sm font-medium text-stone-900 underline cursor-pointer">
+                Choose images
+                <input
+                  type="file"
+                  accept="image/*"
+                  multiple
+                  className="hidden"
+                  onChange={(e) => handleImagesChange(e.target.files)}
+                />
+              </label>
+            </div>
+
+            {form.images.length > 0 && (
+              <div className="grid grid-cols-3 gap-3">
+                {form.images.map((img, i) => (
+                  <div key={i} className="relative">
+                    <img
+                      src={URL.createObjectURL(img)}
+                      alt=""
+                      className="w-full h-20 object-cover rounded-md border border-stone-200"
+                    />
+                    <button
+                      onClick={() => removeImage(i)}
+                      className="absolute -top-2 -right-2 bg-stone-900 text-white rounded-full
+                                 w-5 h-5 text-xs flex items-center justify-center"
+                    >
+                      ✕
+                    </button>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        )}
+
+        {step === 3 && (
+          <div
+            onDrop={handleDrop}
+            onDragOver={(e) => e.preventDefault()}
+            className="border-2 border-dashed border-stone-300 rounded-lg p-10
+                       text-center hover:border-stone-500 transition-colors"
+          >
+            {form.file ? (
+              <p className="text-sm text-stone-700 font-medium">{form.file.name}</p>
+            ) : (
+              <>
+                <p className="text-sm text-stone-500">
+                  Drag and drop your PDF here, or
+                </p>
+                <label className="inline-block mt-3 text-sm font-medium text-stone-900
+                                   underline cursor-pointer">
+                  browse files
+                  <input
+                    type="file"
+                    accept="application/pdf"
+                    className="hidden"
+                    onChange={(e) => update('file', e.target.files?.[0] || null)}
+                  />
+                </label>
+              </>
+            )}
+          </div>
+        )}
+
+        {step === 4 && (
+          <div className="space-y-3 text-sm">
+            <p><span className="font-medium text-stone-700">Title:</span> {form.title}</p>
+            <p><span className="font-medium text-stone-700">Subject:</span> {form.category || 'None'}</p>
+            <p><span className="font-medium text-stone-700">Abstract:</span> {form.abstract}</p>
+            <p><span className="font-medium text-stone-700">Keywords:</span> {form.keywords}</p>
+            <p><span className="font-medium text-stone-700">Images:</span> {form.images.length} attached</p>
+            <p><span className="font-medium text-stone-700">File:</span> {form.file?.name || 'None'}</p>
+          </div>
+        )}
+
+        <div className="flex justify-between mt-8">
+          <button
+            onClick={back}
+            disabled={step === 0}
+            className="text-sm text-stone-500 disabled:opacity-0 hover:text-stone-800"
+          >
+            Back
+          </button>
+
+          {step < STEPS.length - 1 ? (
+            <button
+              onClick={next}
+              className="text-sm font-medium bg-stone-900 text-white px-5 py-2 rounded-md
+                         hover:bg-stone-700 transition-colors"
+            >
+              Continue
+            </button>
+          ) : (
+            <button
+              onClick={handleSubmit}
+              disabled={submitting}
+              className="text-sm font-medium bg-stone-900 text-white px-5 py-2 rounded-md
+                         hover:bg-stone-700 transition-colors disabled:opacity-50"
+            >
+              {submitting ? 'Submitting...' : 'Submit Manuscript'}
+            </button>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/components/SubmissionGuidelines.jsx">
+import { Link } from 'react-router-dom';
+
+const SECTIONS = [
+  {
+    title: 'Abstract',
+    rows: [
+      ['Background / Objective', 'State the context of your study and the main question you set out to answer. Explain why the study was worth doing and what gap it addresses.'],
+      ['Methods', 'Briefly describe your research design, participants or data source, and how you analyzed what you collected.'],
+      ['Results', 'Summarize the key outcomes and trends from your data, presented objectively.'],
+      ['Conclusions', 'State what your findings mean, how they answer your research question, and any applications or next steps.'],
+      ['Keywords', 'List a handful of relevant terms so readers can find your paper when searching related topics.'],
+      ['Word Count', 'Abstracts should be between 200 and 250 words.'],
+    ],
+  },
+  {
+    title: 'Introduction',
+    rows: [
+      ['Background and Context', 'Introduce the broader field your research sits in, referencing relevant prior work.'],
+      ['Problem Statement and Rationale', 'Clearly state the question you\u2019re addressing and why it matters, including gaps in existing research.'],
+      ['Significance and Purpose', 'Explain how your work contributes to the field and what it might enable going forward.'],
+      ['Objectives', 'State the specific goals or hypotheses guiding your study.'],
+      ['Scope and Limitations', 'Define what your study does and doesn\u2019t cover, including constraints on data or resources.'],
+      ['Theoretical Framework', 'If relevant, introduce the model or framework that shapes how you approached the problem.'],
+      ['Methodology Overview', 'Briefly outline your general approach — save the details for the Methods section.'],
+    ],
+  },
+  {
+    title: 'Methods (For Research Papers)',
+    rows: [
+      ['Research Design', 'State whether your study is experimental, observational, cross-sectional, longitudinal, etc.'],
+      ['Participants or Sample', 'Describe who or what was studied, including relevant demographics or selection criteria.'],
+      ['Data Collection', 'Explain how data was gathered — surveys, experiments, observations — and why that method was chosen.'],
+      ['Variables and Measurements', 'Define what you measured and the tools or scales used.'],
+      ['Procedure', 'Walk through the sequence of steps from data collection to analysis.'],
+      ['Data Analysis', 'Describe the statistical or qualitative techniques used to analyze your data.'],
+      ['Ethical Considerations', 'Note any ethical concerns and how you addressed them (consent, confidentiality, etc.).'],
+    ],
+  },
+  {
+    title: 'Methods (For Systematic Reviews)',
+    rows: [
+      ['Search Strategy', 'Describe how you searched for relevant literature — databases, keywords, filters used.'],
+      ['Inclusion Criteria', 'Explain how you decided which studies to include (publication dates, design, relevance).'],
+      ['Data Extraction', 'Describe what information you pulled from each study (authors, dates, designs, findings).'],
+      ['Synthesis Method', 'Explain how you organized and interpreted the gathered information.'],
+      ['Quality Assessment', 'Note any tools or criteria used to evaluate the reliability of included studies.'],
+    ],
+  },
+  {
+    title: 'Discussion',
+    rows: [
+      ['Restatement of Key Findings', 'Concisely summarize the most important results relative to your original question.'],
+      ['Implications and Significance', 'Explain how your results advance understanding in the field.'],
+      ['Connection to Objectives', 'Reflect on whether your original objectives or hypotheses were met, and why or why not.'],
+      ['Recommendations', 'Suggest areas for future research or practical applications based on your findings.'],
+      ['Limitations', 'Be transparent about constraints, biases, or factors that may have affected your results.'],
+      ['Closing Thought', 'End with a reflection or takeaway that leaves the reader with the broader significance of your work.'],
+    ],
+  },
+];
+
+export default function SubmissionGuidelines() {
+  return (
+    <div className="max-w-3xl mx-auto px-6 py-10">
+      <Link to="/" className="text-sm text-stone-500 hover:text-stone-800">
+        ← Back to archive
+      </Link>
+
+      <h1 className="text-2xl font-serif font-semibold text-stone-900 mt-4">
+        Submission Guidelines
+      </h1>
+      <p className="text-stone-500 text-sm mt-1">
+        Use this structure as a checklist while writing your manuscript before submitting.
+      </p>
+
+      <div className="mt-8 space-y-8">
+        {SECTIONS.map((section) => (
+          <div key={section.title}>
+            <h2 className="text-base font-serif font-semibold text-stone-900 bg-stone-100
+                           px-4 py-2 rounded-t-md border border-stone-200">
+              {section.title}
+            </h2>
+            <div className="border border-t-0 border-stone-200 rounded-b-md overflow-hidden">
+              {section.rows.map(([label, desc], i) => (
+                <div
+                  key={label}
+                  className={`flex flex-col sm:flex-row gap-1 sm:gap-4 px-4 py-3 text-sm ${
+                    i % 2 === 0 ? 'bg-white' : 'bg-stone-50'
+                  }`}
+                >
+                  <p className="font-semibold italic text-stone-800 sm:w-56 shrink-0">
+                    {label}
+                  </p>
+                  <p className="text-stone-600 leading-relaxed">{desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-10 text-center">
+        <Link
+          to="/dashboard"
+          className="inline-block text-sm font-medium bg-stone-900 text-white px-5 py-2.5
+                     rounded-md hover:bg-stone-700 transition-colors"
+        >
+          Start Your Submission
+        </Link>
+      </div>
+    </div>
+  );
+}
+</file>
+
+<file path="src/lib/supabaseClient.js">
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
+</file>
+
+<file path="src/App.css">
+.counter {
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--accent);
+  background: var(--accent-bg);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  margin-bottom: 24px;
+
+  &:hover {
+    border-color: var(--accent-border);
+  }
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+.hero {
+  position: relative;
+
+  .base,
+  .framework,
+  .vite {
+    inset-inline: 0;
+    margin: 0 auto;
+  }
+
+  .base {
+    width: 170px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .framework,
+  .vite {
+    position: absolute;
+  }
+
+  .framework {
+    z-index: 1;
+    top: 34px;
+    height: 28px;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
+      scale(1.4);
+  }
+
+  .vite {
+    z-index: 0;
+    top: 107px;
+    height: 26px;
+    width: auto;
+    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
+      scale(0.8);
+  }
+}
+
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
+}
+
+#next-steps {
+  display: flex;
+  border-top: 1px solid var(--border);
+  text-align: left;
+
+  & > div {
+    flex: 1 1 0;
+    padding: 32px;
+    @media (max-width: 1024px) {
+      padding: 24px 20px;
+    }
+  }
+
+  .icon {
+    margin-bottom: 16px;
+    width: 22px;
+    height: 22px;
+  }
+
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+#docs {
+  border-right: 1px solid var(--border);
+
+  @media (max-width: 1024px) {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+#next-steps ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  margin: 32px 0 0;
+
+  .logo {
+    height: 18px;
+  }
+
+  a {
+    color: var(--text-h);
+    font-size: 16px;
+    border-radius: 6px;
+    background: var(--social-bg);
+    display: flex;
+    padding: 6px 12px;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: var(--shadow);
+    }
+    .button-icon {
+      height: 18px;
+      width: 18px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      flex: 1 1 calc(50% - 8px);
+    }
+
+    a {
+      width: 100%;
+      justify-content: center;
+      box-sizing: border-box;
+    }
+  }
+}
+
+#spacer {
+  height: 88px;
+  border-top: 1px solid var(--border);
+  @media (max-width: 1024px) {
+    height: 48px;
+  }
+}
+
+.ticks {
+  position: relative;
+  width: 100%;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -4.5px;
+    border: 5px solid transparent;
+  }
+
+  &::before {
+    left: 0;
+    border-left-color: var(--border);
+  }
+  &::after {
+    right: 0;
+    border-right-color: var(--border);
+  }
+}
+</file>
+
+<file path="src/App.jsx">
+import { useEffect, useState } from 'react';
+import { BrowserRouter, Routes, Route, Navigate, Link } from 'react-router-dom';
+import { supabase } from './lib/supabaseClient';
+import LandingPage from './components/LandingPage';
+import AuthPage from './components/AuthPage';
+import ResetPasswordPage from './components/ResetPasswordPage';
+import StudentDashboard from './components/StudentDashboard';
+import EditorDashboard from './components/EditorDashboard';
+import ManuscriptPage from './components/ManuscriptPage';
+import AuthorPage from './components/AuthorPage';
+import SubmissionGuidelines from './components/SubmissionGuidelines';
+
+const SUPPORT_EMAIL = 'destsubhi@gmail.com';
+
+export default function App() {
+  const [session, setSession] = useState(null);
+  const [profile, setProfile] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [helpOpen, setHelpOpen] = useState(false);
+
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setSession(session);
+      if (session) fetchProfile(session.user.id);
+      else setLoading(false);
+    });
+
+    const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
+      setSession(session);
+      if (session) fetchProfile(session.user.id);
+      else {
+        setProfile(null);
+        setLoading(false);
+      }
+    });
+
+    return () => listener.subscription.unsubscribe();
+  }, []);
+
+  async function fetchProfile(userId) {
+    const { data, error } = await supabase
+      .from('profiles')
+      .select('*')
+      .eq('id', userId)
+      .single();
+
+    if (!error) setProfile(data);
+    setLoading(false);
+  }
+
+  async function handleLogout() {
+    await supabase.auth.signOut();
+  }
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center text-stone-500 text-sm">
+        Loading...
+      </div>
+    );
+  }
+
+  return (
+    <BrowserRouter>
+      <nav className="border-b border-stone-200 bg-white px-6 py-3 flex items-center justify-between">
+        <Link to="/" className="flex items-center gap-3">
+          <img src="/logo.png" alt="SORA" className="h-10 w-10 object-contain" />
+          <span className="flex flex-col leading-tight">
+            <span className="text-xl font-serif font-bold text-stone-900 tracking-tight">
+              SORA
+            </span>
+            <span className="text-[11px] tracking-wide text-stone-500 uppercase">
+              Student Open Research Archive
+            </span>
+          </span>
+        </Link>
+
+        <div className="flex items-center gap-5 text-sm">
+          <Link to="/guidelines" className="text-stone-600 hover:text-stone-900">
+            Guidelines
+          </Link>
+
+          <div className="relative">
+            <button
+              onClick={() => setHelpOpen((o) => !o)}
+              className="flex items-center gap-1.5 text-stone-600 hover:text-stone-900"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-2.5 2-2.5 3.5" />
+                <circle cx="12" cy="17" r="0.5" fill="currentColor" />
+              </svg>
+              Help
+            </button>
+
+            {helpOpen && (
+              <div className="absolute right-0 mt-2 w-64 bg-white border border-stone-200
+                               rounded-md shadow-lg z-10 p-4">
+                <p className="text-sm font-medium text-stone-800 mb-1">Need help?</p>
+                <p className="text-xs text-stone-500 mb-3">
+                  Reach out and we'll get back to you.
+                </p>
+                <a
+                  href={`mailto:${SUPPORT_EMAIL}`}
+                  className="block text-center text-sm font-medium text-white bg-stone-900
+                             hover:bg-stone-700 rounded-md py-2 transition-colors"
+                >
+                  Contact Support
+                </a>
+                <p className="text-[11px] text-stone-400 mt-2 text-center">{SUPPORT_EMAIL}</p>
+              </div>
+            )}
+          </div>
+
+          {session ? (
+            <>
+              {profile?.role === 'editor' ? (
+                <Link to="/editor" className="text-stone-600 hover:text-stone-900">
+                  Editor Queue
+                </Link>
+              ) : (
+                <Link to="/dashboard" className="text-stone-600 hover:text-stone-900">
+                  Submit Research
+                </Link>
+              )}
+              <Link to={`/author/${session.user.id}`} className="text-stone-600 hover:text-stone-900">
+                My Profile
+              </Link>
+              <button
+                onClick={handleLogout}
+                className="text-stone-600 hover:text-stone-900"
+              >
+                Log Out
+              </button>
+            </>
+          ) : (
+            <Link to="/auth" className="text-stone-600 hover:text-stone-900">
+              Sign In
+            </Link>
+          )}
+        </div>
+      </nav>
+
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/manuscript/:id" element={<ManuscriptPage session={session} />} />
+        <Route path="/author/:id" element={<AuthorPage session={session} />} />
+        <Route path="/guidelines" element={<SubmissionGuidelines />} />
+        <Route path="/reset-password" element={<ResetPasswordPage />} />
+        <Route
+          path="/auth"
+          element={session ? <Navigate to="/" /> : <AuthPage />}
+        />
+        <Route
+          path="/dashboard"
+          element={
+            session ? (
+              <StudentDashboard user={session.user} />
+            ) : (
+              <Navigate to="/auth" />
+            )
+          }
+        />
+        <Route
+          path="/editor"
+          element={
+            session && profile?.role === 'editor' ? (
+              <EditorDashboard />
+            ) : (
+              <Navigate to="/" />
+            )
+          }
+        />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+</file>
+
+<file path="src/index.css">
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</file>
+
+<file path="src/main.jsx">
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './index.css';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+</file>
+
+<file path=".gitignore">
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+.env
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+</file>
+
+<file path=".oxlintrc.json">
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "oxc"],
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/only-export-components": ["warn", { "allowConstantExport": true }]
+  }
+}
+</file>
+
+<file path="package.json">
+{
+  "name": "research-platform",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.110.2",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-router-dom": "^7.18.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.3",
+    "autoprefixer": "^10.5.2",
+    "oxlint": "^1.71.0",
+    "postcss": "^8.5.17",
+    "tailwindcss": "^3.4.1",
+    "vite": "^8.1.1"
+  }
+}
+</file>
+
+<file path="postcss.config.js">
+export default {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+</file>
+
+<file path="README.md">
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the Oxlint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+</file>
+
+<file path="tailwind.config.js">
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+</file>
+
+<file path="vite.config.js">
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react()],
+})
+</file>
+
+<file path="index.html">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>research-platform</title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC9S2V5BPM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-PC9S2V5BPM');
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
+</file>
+
+</files>
