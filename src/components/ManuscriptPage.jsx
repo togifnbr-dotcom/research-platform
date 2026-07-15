@@ -15,14 +15,24 @@ export default function ManuscriptPage({ session }) {
   const [showPdf, setShowPdf] = useState(false);
 
   useEffect(() => {
-    fetchManuscript();
+    loadManuscriptAndCountView();
     fetchComments();
     fetchRatings();
-    supabase.rpc('increment_manuscript_views', { manuscript_id: id });
   }, [id]);
 
-  async function fetchManuscript() {
+  // Increment the view first, THEN fetch the manuscript, so the number
+  // shown on screen already reflects this current visit.
+  async function loadManuscriptAndCountView() {
     setLoading(true);
+
+    const { error: rpcError } = await supabase.rpc('increment_manuscript_views', {
+      manuscript_id: id,
+    });
+
+    if (rpcError) {
+      console.error('View count increment failed:', rpcError.message);
+    }
+
     const { data, error } = await supabase
       .from('manuscripts')
       .select(
