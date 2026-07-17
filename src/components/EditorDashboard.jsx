@@ -17,7 +17,7 @@ export default function EditorDashboard() {
     setLoading(true);
     const { data, error } = await supabase
       .from('manuscripts')
-      .select('id, title, abstract, keywords, file_url, status, featured, created_at, profiles(full_name, email)')
+      .select('id, title, abstract, keywords, file_url, status, featured, peer_reviewed, created_at, profiles(full_name, email)')
       .order('created_at', { ascending: false });
 
     if (error) {
@@ -28,11 +28,14 @@ export default function EditorDashboard() {
     setLoading(false);
   }
 
-  async function updateStatus(id, status) {
+  async function updateStatus(id, status, peerReviewed) {
     setActioningId(id);
+    const updatePayload =
+      status === 'published' ? { status, peer_reviewed: peerReviewed } : { status };
+
     const { error } = await supabase
       .from('manuscripts')
-      .update({ status })
+      .update(updatePayload)
       .eq('id', id);
 
     if (error) {
@@ -40,7 +43,25 @@ export default function EditorDashboard() {
       alert('Failed to update: ' + error.message);
     } else {
       setManuscripts((prev) =>
-        prev.map((m) => (m.id === id ? { ...m, status } : m))
+        prev.map((m) => (m.id === id ? { ...m, ...updatePayload } : m))
+      );
+    }
+    setActioningId(null);
+  }
+
+  async function togglePeerReviewed(id, current) {
+    setActioningId(id);
+    const { error } = await supabase
+      .from('manuscripts')
+      .update({ peer_reviewed: !current })
+      .eq('id', id);
+
+    if (error) {
+      console.error(error.message);
+      alert('Failed to update: ' + error.message);
+    } else {
+      setManuscripts((prev) =>
+        prev.map((m) => (m.id === id ? { ...m, peer_reviewed: !current } : m))
       );
     }
     setActioningId(null);
@@ -104,6 +125,17 @@ export default function EditorDashboard() {
                     Featured
                   </span>
                 )}
+                {m.status === 'published' && (
+                  <span
+                    className={`text-xs font-medium px-2.5 py-1 rounded-full border ${
+                      m.peer_reviewed
+                        ? 'bg-sky-50 text-sky-700 border-sky-200'
+                        : 'bg-stone-100 text-stone-500 border-stone-200'
+                    }`}
+                  >
+                    {m.peer_reviewed ? 'Peer-Reviewed' : 'Not Reviewed'}
+                  </span>
+                )}
                 <span
                   className={`text-xs font-medium px-2.5 py-1 rounded-full border ${statusStyles[m.status]}`}
                 >
@@ -127,7 +159,7 @@ export default function EditorDashboard() {
               ))}
             </div>
 
-            <div className="flex items-center gap-3 mt-5">
+            <div className="flex flex-wrap items-center gap-3 mt-5">
               <a
                 href={m.file_url}
                 target="_blank"
@@ -138,17 +170,27 @@ export default function EditorDashboard() {
               </a>
 
               {m.status === 'published' && (
-                <button
-                  disabled={actioningId === m.id}
-                  onClick={() => toggleFeatured(m.id, m.featured)}
-                  className="text-sm font-medium text-amber-700 border border-amber-200
-                             px-4 py-1.5 rounded-md hover:bg-amber-50 disabled:opacity-50"
-                >
-                  {m.featured ? 'Unfeature' : 'Feature'}
-                </button>
+                <>
+                  <button
+                    disabled={actioningId === m.id}
+                    onClick={() => toggleFeatured(m.id, m.featured)}
+                    className="text-sm font-medium text-amber-700 border border-amber-200
+                               px-4 py-1.5 rounded-md hover:bg-amber-50 disabled:opacity-50"
+                  >
+                    {m.featured ? 'Unfeature' : 'Feature'}
+                  </button>
+                  <button
+                    disabled={actioningId === m.id}
+                    onClick={() => togglePeerReviewed(m.id, m.peer_reviewed)}
+                    className="text-sm font-medium text-sky-700 border border-sky-200
+                               px-4 py-1.5 rounded-md hover:bg-sky-50 disabled:opacity-50"
+                  >
+                    Mark as {m.peer_reviewed ? 'Not Reviewed' : 'Peer-Reviewed'}
+                  </button>
+                </>
               )}
 
-              <div className="ml-auto flex items-center gap-3">
+              <div className="ml-auto flex flex-wrap items-center gap-3">
                 <div className="relative">
                   <button
                     onClick={() => setHelpOpenId(helpOpenId === m.id ? null : m.id)}
@@ -179,14 +221,24 @@ export default function EditorDashboard() {
                 </div>
 
                 {m.status !== 'published' && (
-                  <button
-                    disabled={actioningId === m.id}
-                    onClick={() => updateStatus(m.id, 'published')}
-                    className="text-sm font-medium bg-stone-900 text-white
-                               px-4 py-1.5 rounded-md hover:bg-stone-700 disabled:opacity-50"
-                  >
-                    Publish
-                  </button>
+                  <>
+                    <button
+                      disabled={actioningId === m.id}
+                      onClick={() => updateStatus(m.id, 'published', true)}
+                      className="text-sm font-medium bg-stone-900 text-white
+                                 px-4 py-1.5 rounded-md hover:bg-stone-700 disabled:opacity-50"
+                    >
+                      Publish (Peer-Reviewed)
+                    </button>
+                    <button
+                      disabled={actioningId === m.id}
+                      onClick={() => updateStatus(m.id, 'published', false)}
+                      className="text-sm font-medium text-stone-700 border border-stone-300
+                                 px-4 py-1.5 rounded-md hover:bg-stone-50 disabled:opacity-50"
+                    >
+                      Publish (Not Reviewed)
+                    </button>
+                  </>
                 )}
                 {m.status !== 'rejected' && (
                   <button

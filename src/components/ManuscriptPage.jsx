@@ -20,8 +20,6 @@ export default function ManuscriptPage({ session }) {
     fetchRatings();
   }, [id]);
 
-  // Increment the view first, THEN fetch the manuscript, so the number
-  // shown on screen already reflects this current visit.
   async function loadManuscriptAndCountView() {
     setLoading(true);
 
@@ -36,7 +34,7 @@ export default function ManuscriptPage({ session }) {
     const { data, error } = await supabase
       .from('manuscripts')
       .select(
-        'id, title, abstract, keywords, category, file_url, image_urls, view_count, author_id, published_at, created_at, profiles(full_name)'
+        'id, title, abstract, keywords, category, file_url, image_urls, view_count, author_id, published_at, peer_reviewed, created_at, profiles(full_name)'
       )
       .eq('id', id)
       .single();
@@ -163,11 +161,19 @@ export default function ManuscriptPage({ session }) {
         )}
 
         {manuscript.published_at && (
-          <p className="text-xs font-medium text-green-700 bg-green-50 border border-green-200
-                       inline-block px-3 py-1 rounded-full mb-4">
-            Peer-reviewed and approved on{' '}
-            {new Date(manuscript.published_at).toLocaleDateString()}
-          </p>
+          manuscript.peer_reviewed ? (
+            <p className="text-xs font-medium text-green-700 bg-green-50 border border-green-200
+                         inline-block px-3 py-1 rounded-full mb-4">
+              Peer-reviewed and approved on{' '}
+              {new Date(manuscript.published_at).toLocaleDateString()}
+            </p>
+          ) : (
+            <p className="text-xs font-medium text-stone-500 bg-stone-100 border border-stone-200
+                         inline-block px-3 py-1 rounded-full mb-4">
+              Published on {new Date(manuscript.published_at).toLocaleDateString()}{' '}
+              - not yet peer-reviewed
+            </p>
+          )
         )}
 
         {manuscript.category && (
